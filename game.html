@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- the doctype tag tells the browser to display or render the page in a way that meets current HTML5 specs-->
+<html lang="en">
+    <!-- the html lang tag pecifies what language the text of the webpage should be displayed in. -->
+<head>
+    <meta charset="UTF-8">
+    <!-- meta charset tells the webpage what type of character encoding to use -->
+    <!-- sets the page width to match the device width and sets the initial scale for the page before zoom -->
+    <title>Nubby's Casino</title>
+    <!-- title shows the name of the page in print on the page as well as in the tab or name of the window in your browser.  -->
+    <link href="style.css" rel="stylesheet">
+    <!-- the link href tag tells the webpage where an external resource is and what that name of that file is. -->
+     <!-- the rel portion of this tag tells the website what type of file is being called for in the href tag. -->
+</head>
+<body>
+    <!-- the body of the website -->
+    <header>
+        <h1 id="heading">Generate A Random Number, Add to get closest to 100 without going over!!</h1>
+    </header>
+    <button onclick="addRandom()">Add Random Number</button>
+  <!-- a button that activates the javascript -->
+    <p id="last">Last number:</p>
+    <p id="total">Total:</p>
+    <p id="message"></p>
+<!-- assigns a unique identifier to an HTML paragraph element -->
+  <script src="script.js"></script>
+    <!--the script src tag tells the webpage the filename and where to pull the java file from. -->
+</body>
+</html>
