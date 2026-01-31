@@ -1,0 +1,55 @@
+<!-- Christopher White II - Assignment 3.2 - 01/30/2026 -->
+<!-- Top-level DOCTYPE declaration for HTML5 -->
+<!DOCTYPE html>
+<!-- Root html element: language set to English -->
+<html lang="en">
+<!-- Head: metadata, title, and links to styles/fonts -->
+<head>
+    <!-- Page title shown in the browser tab -->
+    <title>String Validation & Secret Message</title>
+    <!-- Link to external stylesheet for page styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- Body: visible content and the user form -->
+<body>
+    <!-- Main page heading -->
+    <header>
+        <!-- Large title for the app -->
+        <h1>Welcome, Share Your Info</h1>
+        <!-- Small tagline under the title -->
+        <p class="tagline">Combine names, validate length, and reveal a secret.</p>
+    </header>
+
+    <!-- Container for the form and messages -->
+    <main>
+      
+
+        <!-- The required form: all inputs inside one form and one submit -->
+        <form id="userForm" novalidate>
+            <!-- Label and input for first name -->
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" maxlength="50" autocomplete="given-name" required>
+
+            <!-- Label and input for last name -->
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" maxlength="50" autocomplete="family-name" required>
+
+            <!-- Label and input for zip code -->
+            <label for="zipCode">Zip Code</label>
+            <input type="text" id="zipCode" name="zipCode" inputmode="numeric" pattern="[0-9]*" maxlength="5" required>
+
+            <!-- Single submit button for the whole form -->
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+
+        <!-- Area where validation messages will be shown using innerHTML -->
+        <div id="message" aria-live="polite"></div>
+
+        <!-- Area where the secret message will be revealed using innerHTML -->
+        <div id="secret" aria-live="polite"></div>
+    </main>
+
+    <!-- Link external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
