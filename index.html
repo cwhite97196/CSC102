@@ -1,27 +1,43 @@
-<!--Christopher White II 1/16/26-->
-<!-- DOCTYPE this is the first tag on the page and it tells the browser that this is an HTML5 page -->
- <!DOCTYPE HTML5>
- <!--the html tag goes next-->
- <html>
-    <!-- the head section has info for the browser and search engines -->
-    <head>
-        <title>CSC102 Home Page</title>
-              <header>
-        <h1>Welcome to My CSC102 Boards Page</h1>
-        <!-- p is for paragraphs, comes with default spacing  -->
-         <nav>
-            <a href="index.html"> Home </a>
-            <br>
-            <a href="boards.html">Boards</a>
-         </nav>
-        </header>
-    </head>
-    <!--the body section holds the text and images that we want to show to the user-->
-    <body>
-        <h1>Welcome to My CSC102 Page</h1>
-        <!-- p is for paragraphs, comes with default spacing  -->
-        <p>
-            <img id="memeImage" src="img/memeImage.jpg"
-        </p>
-    </body>
- </html>
+<!--Christopher White II-->
+<!--CSC102 Intro to Programming-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSC102 Random Image Page</title>
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar at the top of the page -->
+<header>
+    <nav>
+        <!-- Links inside the navbar -->
+        <a href="index.html">Home</a> 
+        <a href="boards.html">Boards</a>
+    </nav>
+</header>
+
+<!-- Main content container, everything below navbar -->
+<div class="main-content">
+    <!-- Page title -->
+    <h1>Welcome to My CSC102 Page</h1>
+
+    <!-- Image that will move randomly -->
+    <img id="box" src="img/memeImage.jpg" alt="Funny Meme">
+
+    <!-- Buttons that control the image -->
+    <div class="buttons">
+        <!-- Clicking this button moves the image to a random spot -->
+        <button type="button" onclick="startMove()">Randomize Position!</button>
+        <!-- Clicking this button resets the image back to start -->
+        <button type="button" onclick="stopMove()">Reset Position</button>
+    </div>
+</div>
+
+<!-- Link to the external JavaScript file for image movement -->
+<script src="imgmover.js"></script>
+</body>
+</html>
