@@ -1,0 +1,89 @@
+<!-- Christopher White II -->
+<!-- Combined Assignment: Form Validation + Palindrome Checker -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Title shown in browser tab -->
+    <title>String Validation & Palindrome Checker</title>
+
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- PAGE HEADER -->
+    <!-- ============================= -->
+    <header>
+        <!-- Main heading -->
+        <h1>Welcome, Share Your Info</h1>
+
+        <!-- Subtitle -->
+        <p class="tagline">
+            Validate your name and zip, then try the palindrome checker!
+        </p>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main>
+
+        <!-- ORIGINAL FORM ASSIGNMENT -->
+
+        <!-- Form for name + zip validation -->
+        <form id="userForm" novalidate>
+
+            <!-- First name label -->
+            <label for="firstName">First Name</label>
+
+            <!-- First name input -->
+            <input type="text" id="firstName" name="firstName" maxlength="50" required>
+
+            <!-- Last name label -->
+            <label for="lastName">Last Name</label>
+
+            <!-- Last name input -->
+            <input type="text" id="lastName" name="lastName" maxlength="50" required>
+
+            <!-- Zip code label -->
+            <label for="zipCode">Zip Code</label>
+
+            <!-- Zip code input -->
+            <input type="text" id="zipCode" name="zipCode" maxlength="5" required>
+
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <!-- Area where validation messages appear -->
+        <div id="message"></div>
+
+        <!-- Secret message reveal area -->
+        <div id="secret"></div>
+
+        <!-- ============================= -->
+        <!-- PALINDROME CHECKER SECTION -->
+        <!-- ============================= -->
+
+        <!-- Section heading -->
+        <h2>Palindrome Checker</h2>
+
+        <!-- Button to start palindrome loop -->
+        <button id="startBtn">Start Palindrome Checker</button>
+
+        <!-- Results display area -->
+        <div id="palResults"></div>
+
+        <!-- Local image stored in img folder -->
+        <img src="img/thinking.jpg" alt="Palindrome image" width="220">
+
+    </main>
+
+    <!-- LINK JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+
+</body>
+</html>
