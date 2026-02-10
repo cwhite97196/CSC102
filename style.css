@@ -1,0 +1,111 @@
+/* Base: set a pleasant page background gradient */
+/* Use the Google font loaded in the HTML for headings and body */
+html, body {
+    /* Full height to allow vertical centering */
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* Use the imported Montserrat font and a fallback stack */
+    font-family: 'Montserrat', Arial, sans-serif;
+    /* Soft diagonal gradient background for a creative feel */
+    background: linear-gradient(135deg, #FFEEAD 0%, #FFD1FF 50%, #CDE7FF 100%);
+    color: #222;
+}
+
+/* Header area styling */
+header {
+    /* Center header content */
+    text-align: center;
+    padding: 2rem 1rem 0.5rem;
+}
+
+/* Main title appearance */
+h1 {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Tagline under the title */
+.tagline {
+    margin-top: 0.25rem;
+    color: #333;
+    opacity: 0.9;
+}
+
+/* Main container centers content and limits width */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+}
+
+
+/* Form layout: compact and modern */
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255,255,255,0.85);
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+/* Labels are slightly muted and clear */
+label {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Inputs with soft borders and focus styles */
+input[type="text"] {
+    padding: 0.55rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.12);
+    font-size: 1rem;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    margin-top: 0.5rem;
+    padding: 0.7rem 1rem;
+    background: linear-gradient(90deg, #6DD3FF 0%, #8E9CFF 100%);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Message styling for warnings and success */
+#message .warning {
+    color: #8B0000;
+    background: #FFECEC;
+    padding: 0.6rem;
+    border-radius: 6px;
+}
+
+#message .success {
+    color: #064E3B;
+    background: #ECFDF5;
+    padding: 0.6rem;
+    border-radius: 6px;
+}
+
+/* Secret box appearance when revealed */
+.secret-box {
+    margin-top: 0.6rem;
+    padding: 0.9rem;
+    background: rgba(255,255,255,0.95);
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
